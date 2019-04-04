@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Exams</title>
+</head>
+<body>
+    <h1>Welcome!</h1>
+    <p>Your exams are:</p>
+    <ul>
+        {% for exam in user_exams %}
+            <li> {{ exam[0] }} = {{ exam[1] }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="{{ url_for('index') }}">Go back to the home page</a>
+</body>
+</html>
