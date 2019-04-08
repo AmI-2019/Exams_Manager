@@ -3,9 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>My Exams Manager</title>
+
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename = "style.css") }}">
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body>
-
+    <div class="container-fluid">
     <h1>My Exams Manager</h1>
     <img src="{{ url_for('static', filename = "exams.jpg") }}">
 
@@ -19,5 +28,8 @@
         <p>You are already authenticated, <a href="{{ url_for("exams") }}">go to your exams!</a></p>
         <a href="{{ url_for('logout') }}">Logout</a>
     {% endif %}
+
+    <p id="copyright">Copyright 2019</p>
+    </div>
 </body>
 </html>

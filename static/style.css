@@ -1,0 +1,15 @@
+h1 {
+    color: red;
+}
+
+h1:hover {
+    color: green;
+}
+
+p {
+    font-family: Arial, serif;
+}
+
+#copyright {
+    color: green;
+}
